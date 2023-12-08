@@ -1,0 +1,12 @@
+[
+    {
+        "Langue" : "Français",
+        "h1" : "Bienvenue sur mon site",
+        "p" : "Aujourd'hui, nous sommes à la nuit de l'info !"
+    },
+    {
+        "Langue" : "Anglais",
+        "h1" : "Welcome to my website",
+        "p" : "Today, we are at the night of the info !"
+    }
+]
