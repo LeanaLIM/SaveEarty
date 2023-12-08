@@ -1,7 +1,7 @@
 const Chrono = 1500; 
 
 function color(object){
-    const TabColor = ["red", "blue", "green", "yellow", "pink", "purple", "rebeccapurple", "white", "cyan", "orange", "lightblue", "black"];
+    const TabColor = ["black", "black", "black", "#3A2D14", "url(fire.gif) black"];
 
     document.querySelector(object).style.setProperty("--BckColor", TabColor[Math.floor(Math.random() * TabColor.length)]);
 }
@@ -20,15 +20,20 @@ function scale(object, max, min) {
     document.querySelector(object).style.setProperty("--Scale", (Math.random() * max) + min);
 }
 
-function Opacity() {
-    let items = document.querySelectorAll(".opa");
-    console.log("a")
-    for(i=0; i< items.length; i++){
-        let item = items[i]
-
-        item.style.setProperty("--Opa", Math.random() * 1.1 + 0.1);
-    }
+function rotate(object) 
+{
+    document.querySelector(object).style.setProperty("--Deg", `${(Math.random() * 360)}Deg` );
 }
+
+// function Opacity() {
+//     let items = document.querySelectorAll(".opa");
+//     console.log("a")
+//     for(i=0; i< items.length; i++){
+//         let item = items[i]
+
+//         item.style.setProperty("--Opa", Math.random() * 1.1 + 0.1);
+//     }
+// }
 
 setInterval(() => {
     color("body");
@@ -38,6 +43,7 @@ setInterval(() => {
 
 setInterval(() => {
     layout(".layout");
+    rotate(".okkkk")
 }, Chrono + 1000)
 
 function fuite(){
@@ -52,6 +58,7 @@ function fuite(){
 }
 
 document.querySelector(".fuite").addEventListener("mouseenter", fuite);
+document.querySelector(".fuite").addEventListener("mousemouve", fuite);
 document.querySelector(".fuite").addEventListener("click", () => {
     console.log("click");
 });
