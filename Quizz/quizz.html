@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizz front</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://kit.fontawesome.com/0615e69bd4.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Fredoka:wght@600;700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+
+    <section class="bloc-intro hidden">
+
+        <div class="intro container">
+            <div class="page">
+                <h1>Explications</h1>
+                <p class="explications">Super, tu as choisi d’aider Earty ! <br> <br>
+                    Pour l’aider, tu vas devoir répondre à un petit quizz sur
+                    l’environnement. Il est constitué de 5 questions sur 5 thèmes climatiques différents ! Pour sauver
+                    Earty
+                    et redonner son sourire, tu dois avoir le plus de bonnes réponses possibles. <br> <br>
+                    Fais de ton mieux et bon courage !</p>
+            </div>
+        </div>
+
+        <a class="start button"> Démarrer <i class="fa-solid fa-arrow-right" style="color: #efebd2;"></i></a>
+        <img src="img/earty.svg" alt="" class="earty">
+    </section>
+
+
+    <section class="bloc-qst hidden">
+
+        <div id="heart-container">
+            <svg width="50" height="45" viewBox="0 0 50 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M18.041 0.453613H9.13378V4.90722H4.68017V9.36083H0.226562V22.7217H4.68017V27.1753H9.13378V31.6289H13.5874V36.0825H18.041V40.5361H22.4946V44.9897H26.9482V40.5361H31.4018V36.0825H35.8554V31.6289H40.309V27.1753H44.7626V22.7217H49.2163V9.36083H44.7626V4.90722H40.309V0.453613H31.4018V4.90722H26.9482V9.36083H22.4946V4.90722H18.041V0.453613ZM18.041 4.90722V9.36083H22.4946V13.8144H26.9482V9.36083H31.4018V4.90722H40.309V9.36083H44.7626V22.7217H40.309V27.1753H35.8554V31.6289H31.4018V36.0825H26.9482V40.5361H22.4946V36.0825H18.041V31.6289H13.5874V27.1753H9.13378V22.7217H4.68017V9.36083H9.13378V4.90722H18.041Z"
+                    fill="#3A2D14" />
+                <path
+                    d="M17.9434 5H9.44336V9.5H4.44336V22.5H8.94336V27H13.4434V31.5H17.9434V36H22.4434V40.5H26.9434V36H31.4434V31.5H35.9434V27H40.4434V22.745H44.9434V9.5H39.9434V5H31.4434V9.5H26.9434V14H22.4434V9.5H17.9434V5Z"
+                    fill="#E52421" stroke="#E52421" stroke-width="0.5" />
+            </svg>
+            <svg width="50" height="45" viewBox="0 0 50 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M18.041 0.453613H9.13378V4.90722H4.68017V9.36083H0.226562V22.7217H4.68017V27.1753H9.13378V31.6289H13.5874V36.0825H18.041V40.5361H22.4946V44.9897H26.9482V40.5361H31.4018V36.0825H35.8554V31.6289H40.309V27.1753H44.7626V22.7217H49.2163V9.36083H44.7626V4.90722H40.309V0.453613H31.4018V4.90722H26.9482V9.36083H22.4946V4.90722H18.041V0.453613ZM18.041 4.90722V9.36083H22.4946V13.8144H26.9482V9.36083H31.4018V4.90722H40.309V9.36083H44.7626V22.7217H40.309V27.1753H35.8554V31.6289H31.4018V36.0825H26.9482V40.5361H22.4946V36.0825H18.041V31.6289H13.5874V27.1753H9.13378V22.7217H4.68017V9.36083H9.13378V4.90722H18.041Z"
+                    fill="#3A2D14" />
+                <path
+                    d="M17.9434 5H9.44336V9.5H4.44336V22.5H8.94336V27H13.4434V31.5H17.9434V36H22.4434V40.5H26.9434V36H31.4434V31.5H35.9434V27H40.4434V22.745H44.9434V9.5H39.9434V5H31.4434V9.5H26.9434V14H22.4434V9.5H17.9434V5Z"
+                    fill="#E52421" stroke="#E52421" stroke-width="0.5" />
+            </svg>
+            <svg width="50" height="45" viewBox="0 0 50 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M18.041 0.453613H9.13378V4.90722H4.68017V9.36083H0.226562V22.7217H4.68017V27.1753H9.13378V31.6289H13.5874V36.0825H18.041V40.5361H22.4946V44.9897H26.9482V40.5361H31.4018V36.0825H35.8554V31.6289H40.309V27.1753H44.7626V22.7217H49.2163V9.36083H44.7626V4.90722H40.309V0.453613H31.4018V4.90722H26.9482V9.36083H22.4946V4.90722H18.041V0.453613ZM18.041 4.90722V9.36083H22.4946V13.8144H26.9482V9.36083H31.4018V4.90722H40.309V9.36083H44.7626V22.7217H40.309V27.1753H35.8554V31.6289H31.4018V36.0825H26.9482V40.5361H22.4946V36.0825H18.041V31.6289H13.5874V27.1753H9.13378V22.7217H4.68017V9.36083H9.13378V4.90722H18.041Z"
+                    fill="#3A2D14" />
+                <path
+                    d="M17.9434 5H9.44336V9.5H4.44336V22.5H8.94336V27H13.4434V31.5H17.9434V36H22.4434V40.5H26.9434V36H31.4434V31.5H35.9434V27H40.4434V22.745H44.9434V9.5H39.9434V5H31.4434V9.5H26.9434V14H22.4434V9.5H17.9434V5Z"
+                    fill="#E52421" stroke="#E52421" stroke-width="0.5" />
+            </svg>
+        </div>
+
+
+        <div class="page">
+            <h2 class="numQst">Question</h2>
+            <div class="qst container">
+                <p class="question">contenu question
+                </p>
+                <div class="answer-container"></div>
+            </div>
+        </div>
+        <div class="justif">
+            <div class="cas-un"></div>
+            <div class="cas-deux"></span>
+            </div>
+
+
+        </div>
+        <a class="next button">Question suivante <i class="fa-solid fa-arrow-right" style="color: #efebd2;"></i></a>
+        <span class="indicator hidden"></span>
+
+
+    </section>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
