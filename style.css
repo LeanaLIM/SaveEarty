@@ -1,0 +1,260 @@
+:root{
+    --background-color: #EFEBD2;
+    --text-color: #3A2D14;
+}
+
+body {
+    margin: 0;
+    font-family: 'DM Sans', sans-serif;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Fredoka', sans-serif;
+
+}
+
+main{
+    margin: 0 5vw;
+    /* border: red 1px solid; */
+
+    
+}
+
+/* ----------------------- Section Bienvenue ----------------------- */
+
+h1 {
+    font-weight: 800;
+    font-size: 8em;
+    text-transform: uppercase;
+    /* padding: 0; */
+    line-height: 0;
+}
+
+nav{
+    width: 600px;
+    height: 104px;
+    border: solid 3px var(--text-color);
+    border-radius: 20px;
+    position: absolute;
+    top: 60px;
+    left: 500px;
+    background: var(--background-color);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#bloc_titre{
+    /* border: 3px solid red; */
+    
+}
+
+#sous_titre{
+    font-family: 'Fredoka';
+    font-size: 3rem;
+    color: #598DCA;
+    font-weight: 900;
+    /* padding: 0px 0px; */
+    line-height: 1;
+    padding-bottom: 1rem;
+}
+
+#bouton_principal{
+    background: #3E8937;
+    padding: 2rem;
+    border-radius: 24px;
+    font-size: 2rem;
+    color: white;
+    box-shadow: -10px 10px 0px black;
+    border: 3px solid black;
+}
+
+a{
+    text-decoration: none;
+    
+}
+
+#illu_earty{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    /* scale: 0.9;
+    transform: translateY(60px); */
+    width: 30%;
+    
+}
+
+#cercle_1{
+    position: absolute;
+    width: 20%;
+}
+
+#cercle_2{
+    position: absolute;
+    width: 20%;
+    right: 0;
+}
+
+/*------------------- SECOND SECTION-------------*/
+
+
+
+.container2,
+.container3,
+.container4
+ {
+    width: 55%; /* Ajustez la largeur selon vos besoins */
+    margin: 10px;
+    border-radius: 20px;
+    border: solid 2px var(--text-color);
+    background: rgba(255, 255, 255, 0.7);
+    font-size: 1.2rem;
+    padding: 20px; /* Ajout de l'espacement interne (padding) */
+    box-shadow: 10px 10px 0px black;
+}
+
+.container2 {
+    order: 1; /* Place container2 à gauche */
+
+}
+
+
+
+.container4 {
+    order: 3; /* Place container4 à droite */
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    /* border: red solid 1px; */
+    height: 400px;
+}
+
+.cadre{
+    width: 300px;
+    background: blue;
+    z-index: 1000;
+}
+
+
+.illu_earty{
+    width: 320px;
+}
+/* ---------------------- Section Cartes ---------------------- */
+
+#section_cartes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.row_cartes{
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+}
+
+#haut, #bas{
+    /* margin: 20px; */
+    /* height: 800px; */
+    margin: 0;
+
+}
+
+
+
+.carte{
+    height: 500px;
+    width: 370px;
+    border: solid 3px black;
+    /* margin: 50px; */
+    margin: 20px;  
+    border-radius: 20px;
+    box-shadow: 10px 10px 0px black;
+    color: black;
+    font-size: 1.5rem;
+}
+
+.haut_carte, .bas_carte{
+    height: 50%;
+    /* border: solid 1px black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 50px;
+}
+
+.img_carte{
+    width: 200px;
+    height: 190px;
+    border: solid black;
+    border-radius: 20px;
+}
+
+
+.mb{
+    position: relative;
+    bottom: 20px;
+}
+
+
+/* --------------------- Template page -------------------- */
+
+.transport{
+    margin-top: 900px;
+}
+
+
+.trp_rose{
+    position: absolute;
+    right: 50;
+    top : 200px;
+}
+
+#size{
+    font-size: 3rem;
+}
+
+.container3{
+    margin: 70px;
+}
+
+.plane{
+    position: absolute;
+    top: 550px;
+    width: 500px;
+    right: -50px;
+    
+}
+
+.bouteille{
+    position: absolute;
+    top: 400px;
+    width: 300px;
+    right: 20px;
+}
+
