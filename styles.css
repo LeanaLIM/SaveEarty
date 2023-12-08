@@ -1,0 +1,96 @@
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  width: 30%;
+  height: 10%;
+  border: solid 2px black;
+  border-radius: 20px;
+}
+
+nav div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+nav div img {
+  width: 20px;
+  height: 20px;
+  margin-left: 15px;
+}
+
+nav img {
+  height: 85%;
+}
+
+#neutral {
+  height: 70%;
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 95vh;
+  background-color: #EFEBD2;
+}
+
+body p {
+  width: 50%;
+}
+
+.Earty {
+  top: 80%;
+    display: flex;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+}
+
+.playable-area {
+  margin-top: 20px;
+  position: relative;
+  width: 400px;
+  height: 600px;
+  border: 5px solid green;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.enemy {
+  position: absolute;
+  width: 75px;
+  height: 75px;
+}
+
+.present {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+
+}
+
+
+.jouer {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 40%;
+  background-color: rgba(0, 0, 0, 0);
+  height: 10%;
+  color: white;
+  border: solid 2px white;
+  font-size: 1.5rem;
+  transition: all .5s;
+}
+
+.jouer:hover {
+  background-color: rgba(0, 0, 0, .7);
+  cursor: pointer;
+}
