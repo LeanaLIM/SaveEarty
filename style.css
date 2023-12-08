@@ -1,0 +1,56 @@
+body {
+    --BckColor : rebeccapurple;
+
+    background-color: var(--BckColor);
+
+    transition: 0.3s;
+}
+
+h1 {
+    --Taille : 4rem;
+    
+    font-size: var(--Taille);
+    transition: 0.3s;
+}
+
+.layout {
+    --Layout : left;
+
+    text-align: var(--Layout);
+}
+
+.fuite {
+    --Scale : 1;
+
+    transform: scale(var(--Scale));
+    position: relative;
+    display: block;
+    width: fit-content;
+    top: 0px;
+    left: 0px;
+    transition: 0.1s;
+    background-color: blue;
+    padding: 20px;
+}
+
+.opa {
+    --Opa: 1;
+
+    opacity: var(--Opa);
+}
+
+#explosion {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    transform: translate(-50%, -76%);
+    visibility: hidden;
+}
+
+/* .ToujourDansLexces {
+    height: 1px;
+    width: 1px;
+    position: absolute;
+    top: 0px;
+    left: 0px;  
+} */
