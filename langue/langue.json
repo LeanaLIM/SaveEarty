@@ -6,13 +6,5 @@
             "title1": "Bienvenue sur mon site",
             "paragraph1": "Aujourd'hui, nous sommes \u00e0 la nuit de l'info !"
         }
-    },
-    {
-        "Langue": "German",
-        "code": "de",
-        "text": {
-            "title1": "Willkommen auf meiner Website",
-            "paragraph1": " Heute sind wir in der Nacht der Info!"
-        }
     }
 ]
