@@ -1,0 +1,157 @@
+body {
+    margin: 0;
+    font-family: 'DM Sans', sans-serif;
+    background-color: #EFEBD2;
+    color: #3A2D14;
+}
+
+section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+.bloc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.bloc-qst {
+    display: none;
+}
+
+.blue {
+    width: auto;
+    height: 500px;
+}
+
+.container {
+    border: 1px solid #3A2D14;
+    box-shadow: 8px 8px 0px 0px #3A2D14;
+    border-radius: 32px;
+
+    width: 450px;
+    height: auto;
+}
+
+.page {
+    padding: 20px;
+    width: auto;
+
+}
+
+.intro {
+    position: relative;
+}
+
+.explications {
+    text-align: justify;
+}
+
+h1 {
+    font-family: 'Fredoka', sans-serif;
+    text-align: center;
+}
+
+.button {
+    background-color: #3A2D14;
+    color: #EFEBD2;
+    padding: 10px 50px;
+    border-radius: 16px;
+    font-size: 1em;
+    margin-left: 450px;
+    cursor: pointer;
+}
+
+.page {
+    position: relative;
+}
+
+.numQst {
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 600;
+    background-color: #EFEBD2;
+    border: #3A2D14 solid 1px;
+    border-radius: 16px;
+    padding: 10px 50px;
+    position: absolute;
+    left: 150px;
+    top: -50px;
+}
+
+i {
+    padding-left: 5px;
+}
+
+.earty {
+    width: 200px;
+    height: 180px;
+    position: absolute;
+    left: 350px;
+    bottom: 180px;
+}
+
+.qst {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.bloc-qst {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    margin-left: 30%;
+}
+
+
+.bloc-qst.hidden {
+    display: none;
+}
+
+.answer-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.answer {
+    background-color: #3A2D14;
+    color: #EFEBD2;
+    padding: 10px 50px;
+    border-radius: 16px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.next {
+    width: 200px;
+}
+
+.site {
+    text-decoration: none;
+    background-color: #EFEBD2;
+    color: #3A2D14;
+    border: solid 1px #3A2D14;
+    padding: 10px 50px;
+    border-radius: 16px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.heart-container {
+    z-index: 3;
+}
+
+.site:hover {
+    background-color: #3A2D14;
+    color: #EFEBD2;
+}
