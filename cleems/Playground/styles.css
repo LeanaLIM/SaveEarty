@@ -1,6 +1,9 @@
-:root{
+/* :root{
     --nav-color: rgb(191, 255, 0);
-}
+    
+} */
+
+
 
 body {
     font-family: Arial, sans-serif;
@@ -21,7 +24,8 @@ button {
 }
 
 header{
-    background-color: var(--nav-color);
+    background-color: var(--background-color);
+    
 }
 
 #toggleImage{
@@ -32,3 +36,4 @@ header{
 label {
     cursor: pointer;
 }
+

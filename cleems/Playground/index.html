@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="styles.css">
     <title>Toggle de Contenu</title>
     <script src="script.js" defer></script>
+    <script src="https://unpkg.com/gsap@3.9.2/dist/gsap.min.js"></script>
+
+
 
 </head>
 
@@ -16,7 +19,7 @@
 
         <nav>
             <label for="boutonToggle">
-                <img id="toggleImage" src="/cleems/Playground/images/terre.jpg" alt="Toggle Image">
+                <img id="toggleImage" src="/cleems/Playground/images/SVG_.svg" alt="Toggle Image">
             </label>
             <input type="checkbox" id="boutonToggle" style="display: none;"> <label for="boutonToggle">
 
@@ -27,8 +30,13 @@
 
 
     <div id="contenu">
-        <div id="contenu1" style="display: block;">Contenu initial.</div>
-        <div id="contenu2" style="display: none;">Nouveau contenu après le clic.</div>
+        <div id="contenu1" style="display: block;">
+            Contenu thème principal
+        </div>
+        <div id="contenu2" style="display: none;">
+            Contenu thème Noël
+
+        </div>
     </div>
 
 
