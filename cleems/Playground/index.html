@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Toggle de Contenu</title>
+    <script src="script.js" defer></script>
+    <script src="https://unpkg.com/gsap@3.9.2/dist/gsap.min.js"></script>
+
+
+
+</head>
+
+<body>
+    <header id="header">
+        <h1>SaveEarty</h1>
+
+        <nav>
+            <label for="boutonToggle">
+                <img id="toggleImage" src="/cleems/Playground/images/SVG_.svg" alt="Toggle Image">
+            </label>
+            <input type="checkbox" id="boutonToggle" style="display: none;"> <label for="boutonToggle">
+
+            </label>
+        </nav>
+    </header>
+
+
+
+    <div id="contenu">
+        <div id="contenu1" style="display: block;">
+            Contenu thème principal
+        </div>
+        <div id="contenu2" style="display: none;">
+            Contenu thème Noël
+
+        </div>
+    </div>
+
+
+</body>
+
+</html>
