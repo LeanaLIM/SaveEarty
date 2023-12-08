@@ -1,0 +1,90 @@
+nav {
+    background-color: #EFEBD2;
+    color: #3A2D14;
+
+    transform: rotate(26Deg);
+}
+
+.Btn {
+    display: block;
+
+    font-family: 'DM Sans', sans-serif;
+    font-size: 2rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: #3A2D14;
+
+    border-radius: 24px;
+    width: fit-content;
+    padding: 20px;
+
+    border: 2px solid black;
+    box-shadow: -10px 10px 0px black;
+
+    background-color: #3E8937;
+}
+
+body {
+    --BckColor : black;
+
+    background: var(--BckColor);
+
+    transition: 0.3s;
+} 
+
+h1 {
+    --Taille : 8rem;
+    
+    font-size: var(--Taille);
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 600;
+
+    color: #3A2D14;
+
+    transition: 0.3s;
+} 
+
+.layout {
+    --Layout : left;
+
+    text-align: var(--Layout);
+}
+
+.fuite {
+    --Scale : 1;
+
+    transform: scale(var(--Scale));
+    position: relative;
+    top: 0px;
+    left: 0px;
+    transition: 0.1s;
+} 
+
+/* .opa {
+    --Opa: 1;
+
+    opacity: var(--Opa);
+}*/
+
+#explosion {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    transform: translate(-50%, -76%);
+    visibility: hidden;
+}
+
+/* .ToujourDansLexces {
+    height: 1px;
+    width: 1px;
+    position: absolute;
+    top: 0px;
+    left: 0px;  
+} */
+
+.okkkk {
+    --Deg : 0Deg;
+
+    transform: rotate(var(--Deg));
+    transition: 0.3s;
+}
