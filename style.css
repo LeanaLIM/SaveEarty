@@ -159,17 +159,67 @@ a{
 
 
 .illu_earty{
-    width: 300px;
+    width: 320px;
 }
 /* ---------------------- Section Cartes ---------------------- */
+
+#section_cartes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
 .row_cartes{
     display: flex;
     flex-direction: row;
-    
+    margin: 0;
 }
+
+#haut, #bas{
+    /* margin: 20px; */
+    /* height: 800px; */
+    margin: 0;
+
+}
+
+
 
 .carte{
     height: 500px;
-    width: 250px;
+    width: 370px;
+    border: solid 3px black;
+    /* margin: 50px; */
+    margin: 20px;  
+    border-radius: 20px;
+    box-shadow: 10px 10px 0px black;
+}
+
+.haut_carte, .bas_carte{
+    height: 50%;
+    border: solid 1px black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.img_carte{
+    width: 70%;
+    height: 70%;
+    border: solid black;
+    border-radius: 20px;
+}
+
+/* --------------------- Template page -------------------- */
+
+.transport{
+    margin-top: 700px;
+}
+
+
+.trp_ros{
+    position: absolute;
+    width: 20%;
+    right: 0;
+    top : 600px;
 }
