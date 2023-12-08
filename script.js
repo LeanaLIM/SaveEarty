@@ -33,6 +33,14 @@ let newTab = langDic.filter(function (objet) {
     return !nomsLangues.includes(objet.name);
 });
 
+// var langueStockee = obtenirLangue();
+// if (langueStockee) {
+//     valeurSelectionnee = langueStockee;
+
+// }
+
+
+
 $("#Languages").change(function () {
     // Récupérer la valeur sélectionnée
     let valeurSelectionnee = $(this).val();
@@ -57,7 +65,7 @@ $("#Languages").change(function () {
             if (allFrenchText.hasOwnProperty(cle)) {
                 // $("#" + cle).html(allText[cle]);
                 allKeys.push(cle)
-                translatedText = translatedText + allFrenchText[cle] + " / ";
+                translatedText = translatedText + allFrenchText[cle] + " _ ";
             }
         }
 
@@ -76,7 +84,7 @@ $("#Languages").change(function () {
 
             translatedText = await res.json();
 
-            translatedText = translatedText.translatedText.split(" / ");
+            translatedText = translatedText.translatedText.split(" _");
 
             // Associer les deux tableaux en un tableau d'objets
             var tableauObjets = translatedText.map(function (cle, index) {
@@ -127,8 +135,14 @@ $("#Languages").change(function () {
                 "text": tableauRegroupe[0]
             }
 
-            console.log(newLangue)
-            
+            async function ajouteLangue() {
+                const response = await fetch("api.php?lang=" + JSON.stringify(newLangue));
+                const result = await response.text();
+            }
+
+            ajouteLangue();
+            definirLangue(selectedLangue)
+
 
         }
 
@@ -140,6 +154,8 @@ $("#Languages").change(function () {
 
         // Récupérer les données de la langue sélectionnée à partie de son code
         const selectedData = langues.find((element) => element.code === selectedLangue);
+
+        definirLangue(selectedLangue)
 
         // Si selectedData n'est pas null
         if (selectedData) {
@@ -156,3 +172,11 @@ $("#Languages").change(function () {
     }
 
 });
+
+function definirLangue(langue) {
+    Cookies.set('langue', langue, { expires: 365 }); // Le cookie expire après 365 jours
+}
+
+function obtenirLangue() {
+    return Cookies.get('langue');
+}
