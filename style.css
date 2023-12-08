@@ -251,4 +251,10 @@ a{
     
 }
 
-/*--------POPUP----------------*/
+.bouteille{
+    position: absolute;
+    top: 400px;
+    width: 300px;
+    right: 20px;
+}
+
