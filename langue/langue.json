@@ -1,12 +1,18 @@
 [
     {
         "Langue" : "French",
-        "h1" : "Bienvenue sur mon site",
-        "p" : "Aujourd'hui, nous sommes à la nuit de l'info !"
+        "code": "fr",
+        "text": {
+            "title1" : "Bienvenue sur mon site",
+            "paragraph1" : "Aujourd'hui, nous sommes à la nuit de l'info !"
+        }
     },
     {
         "Langue" : "English",
-        "h1" : "Welcome to my website",
-        "p" : "Today, we are at the night of the info !"
+        "code": "en",
+        "text": {
+            "title1" : "Welcome to my website",
+            "paragraph1" : "Today, we are at the night of the info !"
+        }
     }
 ]
