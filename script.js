@@ -65,7 +65,7 @@ $("#Languages").change(function () {
             if (allFrenchText.hasOwnProperty(cle)) {
                 // $("#" + cle).html(allText[cle]);
                 allKeys.push(cle)
-                translatedText = translatedText + allFrenchText[cle] + " _ ";
+                translatedText = translatedText + allFrenchText[cle] + "_";
             }
         }
 
@@ -84,7 +84,8 @@ $("#Languages").change(function () {
 
             translatedText = await res.json();
 
-            translatedText = translatedText.translatedText.split(" _");
+            translatedText = translatedText.translatedText.split("_");
+            translatedText.pop();
 
             // Associer les deux tableaux en un tableau d'objets
             var tableauObjets = translatedText.map(function (cle, index) {

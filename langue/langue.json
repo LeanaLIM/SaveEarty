@@ -8,12 +8,11 @@
         }
     },
     {
-        "Langue": "English",
-        "code": "en",
+        "Langue": "German",
+        "code": "de",
         "text": {
-            "title1": "Welcome to my website",
-            "paragraph1": " today we are at the night of the info!",
-            "undefined": ""
+            "title1": "Willkommen auf meiner Website",
+            "paragraph1": " Heute sind wir in der Nacht der Info!"
         }
     }
 ]
