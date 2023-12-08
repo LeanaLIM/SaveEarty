@@ -4,27 +4,37 @@ const quiz = [
     {
       question: "Question 1",
       answers: ["answer1", "answer2", "answer3"],
-      goodAnswer: 0
+      goodAnswer: 0,
+      badAnswer: "C'est pas la bonne réponse chef!",
+      RightAnswer: "C'est la bonne réponse chef!"
     },
     {
       question: "Question 2",
       answers: ["answer1", "answer2", "answer3"],
-      goodAnswer: 1
+      goodAnswer: 1,
+      badAnswer: "C'est pas la bonne réponse chef!",
+      RightAnswer: "C'est la bonne réponse chef!"
     },
     {
         question: "Question 3",
         answers: ["answer1", "answer2", "answer3"],
-        goodAnswer: 1
+        goodAnswer: 1,
+        badAnswer: "C'est pas la bonne réponse chef!",
+        RightAnswer: "C'est la bonne réponse chef!"
     },
     {
         question: "Question 4",
         answers: ["answer1", "answer2", "answer3"],
-        goodAnswer: 1
+        goodAnswer: 1,
+        badAnswer: "C'est pas la bonne réponse chef!",
+        RightAnswer: "C'est la bonne réponse chef!"
     },
     {
         question: "Question 5",
         answers: ["answer1", "answer2", "answer3"],
-        goodAnswer: 1
+        goodAnswer: 1,
+        badAnswer: "C'est pas la bonne réponse chef!",
+        RightAnswer: "C'est la bonne réponse chef!"
     }
   ];
 
@@ -33,6 +43,7 @@ const quiz = [
   const startBtn = document.querySelector(".start-button");
   const quizContainer = document.querySelector(".quiz-container");
   const indicator = document.querySelector(".indicator");
+  let answersDiv = document.getElementById('answers-div');
 
 
   let answered = false;
@@ -58,6 +69,9 @@ const quiz = [
   //passer à la question suivante
   function nextQuestion() {
     questionIndex++;
+
+    $("#answers-div").css("display", "none");
+  
     if (questionIndex === quiz.length) {
       showFinalPage();
       return;
@@ -76,12 +90,12 @@ const quiz = [
     page.appendChild(answerContainer);
     answered = false;
     questionContainer.textContent = quiz[questionIndex].question;
-    let body = document.querySelector("body");
     
     quiz[questionIndex].answers.forEach((answer, index) => {
       const element = document.createElement("button");
       element.className = "answer";
       element.textContent = answer;
+
 
       
 //si la valeur de goodAnswer est supérieur à ... , afficher un message 
@@ -104,7 +118,6 @@ function changeEarty() {
         pathElement1.setAttribute("d", "M18.041 0.453613H9.13378V4.90722H4.68017V9.36083H0.226562V22.7217H4.68017V27.1753H9.13378V31.6289H13.5874V36.0825H18.041V40.5361H22.4946V44.9897H26.9482V40.5361H31.4018V36.0825H35.8554V31.6289H40.309V27.1753H44.7626V22.7217H49.2163V9.36083H44.7626V4.90722H40.309V0.453613H31.4018V4.90722H26.9482V9.36083H22.4946V4.90722H18.041V0.453613ZM18.041 4.90722V9.36083H22.4946V13.8144H26.9482V9.36083H31.4018V4.90722H40.309V9.36083H44.7626V22.7217H40.309V27.1753H35.8554V31.6289H31.4018V36.0825H26.9482V40.5361H22.4946V36.0825H18.041V31.6289H13.5874V27.1753H9.13378V22.7217H4.68017V9.36083H9.13378V4.90722H18.041Z");
         pathElement1.setAttribute("fill", "#3A2D14"); // Couleur du cœur
 
-        // Ajouter le contour du cœur
         const pathElement2 = document.createElementNS("http://www.w3.org/2000/svg", "path");
         pathElement2.setAttribute("d", "M17.9434 5H9.44336V9.5H4.44336V22.5H8.94336V27H13.4434V31.5H17.9434V36H22.4434V40.5H26.9434V36H31.4434V31.5H35.9434V27H40.4434V22.745H44.9434V9.5H39.9434V5H31.4434V9.5H26.9434V14H22.4434V9.5H17.9434V5Z");
         pathElement2.setAttribute("fill", "#E52421"); // Couleur du contour
@@ -117,18 +130,28 @@ function changeEarty() {
     }
 }
 
+//incrementation du score
+
+
     element.addEventListener("click", () => {
+
+        $("#answers-div").css("display", "block");
+
         if (answered) return;
         if (index == quiz[questionIndex].goodAnswer) {
           element.classList.add("good");
           indicator.classList.add("good");
           goodAnswers++;
+          answersDiv.innerHTML = quiz[questionIndex].RightAnswer;
+
         } else {
           element.classList.add("bad");
           indicator.classList.add("bad");
           goodAnswers--;
+          answersDiv.innerHTML = quiz[questionIndex].badAnswer;
         }
         answered = true;
+
         setTimeout(() => {
           showNextBtn(page);
         }, 1100);
