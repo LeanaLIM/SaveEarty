@@ -10,4 +10,4 @@ Notre projet a pour but de sensibilser les utilisateurs aux alertes sur le clima
 ACCES : On accède au xmas via un bouton situé sur la page d’accueil, dans la navbar. Il ressemble à une planète terre en noir et blanc avec un chapeau de noël. Le xmas est d’ailleurs le thème pour notre défi “Jeu de thème”.
 
 lien du dépot: https://github.com/LeanaLIM/SaveEarty/
-Lien du dépot: https://github.com/LeanaLIM/SaveEarty/
+Lien du site: saveearty.com
